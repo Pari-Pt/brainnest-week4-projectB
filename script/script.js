@@ -85,6 +85,12 @@ const calculate = () => {
     const displayArray = DISPLAY.value.split("");
     const calculationArray = [];
 
+        //Warning: If user attempts to use Equals sign before inputting an operator
+        if(operatorOptions.includes(!displayArray)) {
+            WARNING.innerText = "Please provide an operator to calculate with"
+            console.log("help");
+        }
+    
 
     //Warning: If user attempts to use the Equals sign before inputting digits
     if (operatorOptions.includes(displayArray[displayArray.length - 1]) || displayArray.length === 0) {
@@ -92,11 +98,6 @@ const calculate = () => {
         return;
     }
 
-    //Warning: If user attempts to use Equals sign before inputting an operator
-    if(!operatorOptions.includes(displayArray)) {
-        WARNING.innerText = "Please provide an operator to calculate with"
-    }
-    
 
     //If numbers involved in subsequent calculations have a decimal point, it will be added to the array
     displayArray.forEach((element, index) => {
