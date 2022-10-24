@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    font-size: 10px;
+    margin: 0 auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3rem;
+    align-items: center;
+    border: 2px solid rgb(75, 72, 72);
+    padding: 1rem;
+    margin-top: 10rem;
+    height: 70rem;
+    width: 60rem;
+    border-radius: 1.2rem;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+}
+
+main h1 {
+    font-size: 4rem;
+}
+
+.display-warning {
+    color: red;
+    font-size: 2rem;
+}
+
+input.display-section {
+    display: flex;
+    height: 5.5rem;
+    width: 45rem;
+    border: 2px solid rgb(75, 72, 72);
+    font-size: 3.5rem;
+    padding: 0.6rem;
+    align-items: center;
+    border-radius: 1.2rem;
+    background-color: rgb(240, 231, 218);
+}
+
+section.digits-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50rem;
+    height: 17rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
+button {
+    font-size: 3.5rem;
+    transition:100ms all ease-in-out;
+    border-radius: 1.2rem;
+    background-color: rgb(240, 231, 218);
+    width: 7rem;
+    height: 7rem;
+    border: 2px solid rgb(75, 72, 72);
+    text-align: center;
+}
+
+button:active {
+    background-color: rgba(115, 180, 241, 0.582);
+}
+
+section.operators-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+section.other-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer p, footer a {
+    font-size: 2rem;
+}
+
+footer a {
+    color: grey;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: blue;
+}
+
+#equals-sign {
+    width: 13.5rem;
+    border: 4px solid rgb(132, 84, 234);
+}
