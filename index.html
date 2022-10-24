@@ -14,27 +14,27 @@
         <input class="display-section" id="display" />
         <section class="display-warning" id="warning"></section>
         <section class="digits-section">
-            <button class="digit" id="one">1</button>
-            <button class="digit" id="two">2</button>
-            <button class="digit" id="three">3</button>
-            <button class="digit" id="four">4</button>
-            <button class="digit" id="five">5</button>
-            <button class="digit" id="six">6</button>
-            <button class="digit" id="seven">7</button>
-            <button class="digit" id="eight">8</button>
-            <button class="digit" id="nine">9</button>
-            <button class="digit" id="zero">0</button>
+            <button class="digit" id="one" onclick="getValue('1')">1</button>
+            <button class="digit" id="two" onclick="getValue('2')">2</button>
+            <button class="digit" id="three" onclick="getValue('3')">3</button>
+            <button class="digit" id="four" onclick="getValue('4')">4</button>
+            <button class="digit" id="five" onclick="getValue('5')">5</button>
+            <button class="digit" id="six" onclick="getValue('6')">6</button>
+            <button class="digit" id="seven" onclick="getValue('7')">7</button>
+            <button class="digit" id="eight" onclick="getValue('8')">8</button>
+            <button class="digit" id="nine" onclick="getValue('9')">9</button>
+            <button class="digit" id="zero" onclick="getValue('0')">0</button>
         </section>
         <section class="operators-section">
-            <button class="operator" id="addition-operator">+</button>
-            <button class="operator" id="subtraction-operator">–</button>
-            <button class="operator" id="multiplication-operator">x</button>
-            <button class="operator" id="division-operator">÷</button>
+            <button class="operator" id="addition-operator" onclick="operatorSelect('+')">+</button>
+            <button class="operator" id="subtraction-operator" onclick="operatorSelect('-')">–</button>
+            <button class="operator" id="multiplication-operator" onclick="operatorSelect('*')">x</button>
+            <button class="operator" id="division-operator" onclick="operatorSelect('/')">÷</button>
         </section>
         <section class="other-section">
-            <button class="other-button" id="clear-sign">C</button>
-            <button class="other-button" id="backspace-sign">⬅</button>
-            <button class="other-button" id="equals-sign">=</button>
+            <button class="other-button" id="clear-sign" onclick="fullClear()">C</button>
+            <button class="other-button" id="backspace-sign" onclick="backspace()">⬅</button>
+            <button class="other-button" id="equals-sign" onclick="calculate()">=</button>
         </section>
         <footer>
             <p>Designed and built by <a href="https://confident-elion-25e30f.netlify.app/index.html" target="_blank" rel="noopener noreferrer">Pari Nathali</a></p>
