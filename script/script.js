@@ -1,6 +1,7 @@
 // Target and reach Elements
 const DISPLAY = document.getElementById("display");
 const WARNING = document.getElementById("warning");
+const EQUALS_SIGN = document.getElementById("equals-sign");
 const operatorOptions = ["+", "-", "*", "/"];
 
 
@@ -85,9 +86,9 @@ const calculate = () => {
     const calculationArray = [];
 
 
-    //Warning: If user attempts to calculate after 
+    //Warning: If user attempts to use the Equals sign before inputting digits
     if (operatorOptions.includes(displayArray[displayArray.length - 1]) || displayArray.length === 0) {
-        WARNING.innerText = "hello"
+        WARNING.innerText = "Please provide a calculation to equalise"
         return;
     }
 
@@ -150,7 +151,6 @@ const calculate = () => {
 
         if (operatorInUse === "/" && arrayElement === "0" ) {
             WARNING.innerText = "Owch! That's an Infinite number, don't divide by 0";
-            //fullClear();
             return;
         }
         result = operation(result, arrayElement, operatorInUse);
@@ -180,6 +180,7 @@ const backspace = () => {
     removeWarnings();
     const array = DISPLAY.value.split("");
     const arrayContainsElements = array.length > 0;
+
 
     if (arrayContainsElements) {
         array.pop();
