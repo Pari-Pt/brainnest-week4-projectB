@@ -12,10 +12,10 @@ main {
     gap: 3rem;
     align-items: center;
     border: 2px solid rgb(75, 72, 72);
-    margin-top:8rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    height: 75rem;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 62rem;
     width: 65rem;
     border-radius: 1.2rem;
     background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
@@ -29,11 +29,12 @@ main h1 {
     color: red;
     font-size: 2rem;
     height: 2rem;
+    text-decoration: underline;
 }
 
 input.display-section {
     display: flex;
-    height: 6.5rem;
+    height: 6rem;
     width: 60rem;
     border: 2px solid rgb(75, 72, 72);
     font-size: 4.5rem;
@@ -48,7 +49,7 @@ section.digits-section {
     flex-direction: row;
     justify-content: space-between;
     width: 55rem;
-    height: 25rem;
+    height: 22rem;
     flex-wrap: wrap;
     gap: 0.6rem;
 
@@ -59,8 +60,8 @@ button {
     font-size: 4.5rem;
     border-radius: 1.2rem;
     background-color: rgb(240, 231, 218);
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 8rem;
     border: 3px solid rgb(75, 72, 72);
     text-align: center;
 }
@@ -91,6 +92,8 @@ section.decision-section {
 
 footer p, footer a {
     font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
 }
 
 footer a {
@@ -108,6 +111,6 @@ footer a:hover {
 }
 
 #equals-sign:focus{
-    background-color: rgba(45, 179, 56, 0.801);
+    background-color: rgba(134, 67, 221, 0.801);
 
 }

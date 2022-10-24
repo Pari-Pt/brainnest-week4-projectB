@@ -92,6 +92,12 @@ const calculate = () => {
         return;
     }
 
+    //Warning: If user attempts to use Equals sign before inputting an operator
+    if(!operatorOptions.includes(displayArray)) {
+        WARNING.innerText = "Please provide an operator to calculate with"
+    }
+    
+
     //If numbers involved in subsequent calculations have a decimal point, it will be added to the array
     displayArray.forEach((element, index) => {
         const lastIndexOfCalculationArray = calculationArray.length - 1;
@@ -124,7 +130,7 @@ const calculate = () => {
             }
             calculationArray.push(element)
         }
-        
+
     })
 
 
@@ -153,6 +159,7 @@ const calculate = () => {
             WARNING.innerText = "Owch! That's an Infinite number, don't divide by 0";
             return;
         }
+
         result = operation(result, arrayElement, operatorInUse);
     }
 
